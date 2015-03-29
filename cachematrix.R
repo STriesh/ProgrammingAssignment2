@@ -6,7 +6,8 @@
 ##  "matrix" object that can cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
-
+  CacheMatrix <<-x
+  CacheMatrix
 }
 
 
@@ -18,4 +19,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
+  Inverse.Matrix=solve(x)
+  Inverse.Matrix
 }
